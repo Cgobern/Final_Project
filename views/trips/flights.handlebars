@@ -2,8 +2,25 @@
     <div class="row">
         <div id="flights" class="col-lg-12">
             <h1>Flights</h1>
-            <div class="flights"></div>
-            <div>
+            <div class="flights">
+            	<script type="text/javascript" src="//api.skyscanner.net/api.ashx?key=7ff63dc9-af3b-49b6-9c97-555086e2abac"></script>
+				<script type="text/javascript">
+				   skyscanner.load("snippets","2");
+				   function main(){
+				       var snippet = new skyscanner.snippets.SearchPanelControl();
+				       snippet.setShape("box300x250");
+				       snippet.setCulture("en-GB");
+				       snippet.setCurrency("USD");
+				       snippet.setMarket("US");
+				       snippet.setColourScheme("classicbluelight");
+				       snippet.setProduct("flights","1");
+				       snippet.setProduct("hotels","2");
+
+				       snippet.draw(document.getElementById("snippet_searchpanel"));
+				   }
+				   skyscanner.setOnLoadCallback(main);
+				</script>
+				<div id="snippet_searchpanel" style="width: auto; height:auto;"></div>
             </div>
         </div>
     </div>
