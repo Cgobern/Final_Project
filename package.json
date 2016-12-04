@@ -1,0 +1,19 @@
+{
+  "name": "final_project",
+  "version": "1.0.0",
+  "description": "volunteer travel app that allows its users to giving back to the communities they visit",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cgobern/Final_Project.git"
+  },
+  "author": "Cortney and Jen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cgobern/Final_Project/issues"
+  },
+  "homepage": "https://github.com/Cgobern/Final_Project#readme"
+}
